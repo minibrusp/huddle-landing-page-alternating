@@ -56,11 +56,12 @@ img.L-illustration {
 .btn {
    text-decoration: none;
    border-radius: 50px;
-   font-size: 0.823rem;
-   color: white;
+   /* font-size: 0.823rem; */
+   font-size: 0.723rem;
+   color: var(--Very-Pale-Cyan);
    background-color: var(--Pink);
    font-weight: 700;
-   padding: 13px 50px;
+   padding: 13px 60px;
    display: inline-block;
    transition: .3s ease-in-out background-color,
    .3s ease-in-out color;
@@ -68,8 +69,9 @@ img.L-illustration {
 }
 .btn:hover,
 .btn:focus {
-   background-color: white;
+   background-color: var(--Very-Pale-Cyan);
    color: var(--Pink);
+
 } 
 
 .m-margin {
@@ -138,25 +140,61 @@ nav img {
 }
 
 /* Cards ------------- */
+.cards {
+   padding: 70px 0 10px 0;
+}
 .card-items {
-   /* background-color: yellow; */
+   background-color: white;
    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);
    border-radius: 15px;
    padding: 50px 0 50px 0;
    margin: 50px 0;
 }
+.card-items:nth-of-type(1){
+   margin-top: 0;
+}
 .card-img-container {
    margin: 0 45px;
 }
 .card-text {
-   margin: 0 40px;
+   margin: 60px 5vw 0 5vw;
 }
 .card-text p{
-   font-size: 0.937rem;
+   font-size: 0.878rem;
 }
 
 .cards p {
    color: var(--Grayish-Blue);
+}
+
+aside h2 {
+   font-size: 1rem;
+   max-width: 307px;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+aside.card-items {
+   padding: 30px 0;
+   margin: 20px auto auto auto;
+   transform: translateY(65px);
+}
+
+aside .btn {
+   margin-top: 10px;
+   font-size: 0.678rem;
+}
+
+/* Footer ------------- */
+
+footer {
+   background-color: var(--Very-Dark-Cyan);
+   color: white;
+   padding-top: 200px;
+}
+
+footer img:nth-of-type(1){
+   filter: contrast(0) brightness(100);
 }
 
 
