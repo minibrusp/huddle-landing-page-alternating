@@ -208,6 +208,10 @@ footer .contact-info {
    margin: 0 0;
 }
 
+.company-logo {
+   text-align: left;
+}
+
 footer img:nth-of-type(1){
    filter: contrast(0) brightness(100);
    width: 190.703px;
@@ -340,7 +344,163 @@ footer .contact-email img {
 }
 
 
+/* media queries ------------- */
 
+@media screen and (min-width: 900px) {
+
+   body {
+      text-align: unset;
+   }
+
+   img.L-illustration {
+      margin-top: 0;
+   }
+
+   /* header-900 */ 
+
+   .header-content {
+      display: grid;
+      grid-template-columns: .8fr 1fr;
+      justify-content: center;
+      align-items: center;
+   }
+   header h1,
+   header p {
+      text-align: left;
+      margin-left: 0;
+      margin-right: 0;
+      align-self: end;
+   }
+   header p {
+      max-width: 480px;
+   }
+
+   /* cards-900 */
+   
+   .card-items:nth-child(1), 
+   .card-items:nth-child(2),
+   .card-items:nth-child(3) {
+      display: grid;
+      grid-template-columns: .8fr 1fr;
+      grid-template-areas: 
+         "left right";
+      align-content: center;
+      margin: 30px 0;
+   }
+
+
+   .card-items:nth-child(1),
+   .card-items:nth-child(3) {
+      grid-template-columns: 1fr .8fr;
+   }
+
+   .card-items:nth-child(1) .card-text,
+   .card-items:nth-child(3) .card-text {
+      grid-area: left;
+   }
+   .card-items:nth-child(1) .card-img-container,
+   .card-items:nth-child(3) .card-img-container {
+      grid-area: right;
+   }
+
+   .card-text {
+      margin-top: 0;
+      align-self: center;
+   }
+
+   aside.card-items {
+      text-align: center;
+      max-width: 421.5px;
+   }
+
+   /* footer-900 */
+
+   footer, 
+   footer p,
+   .copyright p {
+      /* font-size: 12px; */
+      font-size: 0.823rem;
+   }
+
+   .ftr-grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr .5fr;
+      grid-template-rows: 70px 1fr 100px;
+      grid-template-areas: 
+         "logo logo logo"
+         "contact info social"
+         "ftr ftr ftr";
+      margin-bottom: 30px;
+   }
+
+   .company-logo {
+      grid-area: logo;
+   }
+
+   .contact-info div:nth-child(1) {
+      margin-top: 0;
+   }
+
+   .company-info {
+      margin-top: 0;
+      align-self: start;
+   }
+
+   .company-info ul{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: 
+         "about career"
+         "what blog"
+         "faq contact";
+      justify-content: center;
+      align-content: center;
+      margin: 0 30px;
+   }
+   .company-info li {
+      justify-self: start;
+      align-self: start;
+      padding: 0 0 15px 0;
+   }
+   .company-info li:nth-child(1) {
+      grid-area: about;
+   }
+   .company-info li:nth-child(2) {
+      grid-area: what;
+   }
+   .company-info li:nth-child(3) {
+      grid-area: faq;
+   }
+   .company-info li:nth-child(4) {
+      grid-area: career;
+   }
+   .company-info li:nth-child(5) {
+      grid-area: blog;
+   }
+   .company-info li:nth-child(6) {
+      grid-area: contact;
+   }
+
+   .social-icons {
+      justify-self: start;
+   }
+   .social-icons,
+   .social-icons ul {
+      margin-top: 0;
+   }
+   .social-icons li.facebook {
+      margin-left: 0;
+   }
+
+   .copyright {
+      grid-area: ftr;
+      justify-self: end;
+      align-self: center;
+      margin: 0;
+   }
+
+}
 
 
 
