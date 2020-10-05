@@ -237,6 +237,10 @@ footer .contact-email img {
    align-self: start;
 }
 
+.company-info {
+   margin-top: 40px;
+}
+
 .company-info ul {
    flex-direction: column;
    text-align: left;
@@ -262,6 +266,10 @@ footer .contact-email img {
    list-style-type: none;
    display: flex;
    padding-left: 0;
+}
+
+.social-icons {
+   margin-top: 40px;
 }
 
 .social-icons ul{
@@ -308,8 +316,13 @@ footer .contact-email img {
    color: #e1306c;
 }
 
+.copyright {
+   margin-bottom: 40px;
+}
+
 .copyright p{
    font-size: 0.723rem;
+   color: var(--Very-Pale-Cyan);
 }
 
 .attribution {
@@ -325,6 +338,9 @@ footer .contact-email img {
 .attribution a:focus {
    color: var(--Pink);
 }
+
+
+
 
 
 
