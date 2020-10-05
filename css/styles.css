@@ -95,8 +95,10 @@ img.L-illustration {
 }
 .btn:hover,
 .btn:focus {
-   background-color: var(--Very-Pale-Cyan);
-   color: var(--Pink);
+   /* background-color: var(--Very-Pale-Cyan); */
+   background-color: var(--Very-Dark-Cyan);
+   /* color: var(--Pink); */
+   color: var(--Very-Pale-Cyan);
 
 } 
 
