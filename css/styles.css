@@ -363,6 +363,7 @@ footer .contact-email img {
       grid-template-columns: .8fr 1fr;
       justify-content: center;
       align-items: center;
+      margin-top: 30px;
    }
    header h1,
    header p {
@@ -439,6 +440,10 @@ footer .contact-email img {
 
    .contact-info div:nth-child(1) {
       margin-top: 0;
+   }
+
+   .contact-address p {
+      max-width: 295px;
    }
 
    .company-info {
