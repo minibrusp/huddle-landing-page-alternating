@@ -175,7 +175,7 @@ aside h2 {
 }
 
 aside.card-items {
-   padding: 30px 0;
+   padding: 40px 2vw;
    margin: 20px auto auto auto;
    transform: translateY(65px);
 }
@@ -189,13 +189,151 @@ aside .btn {
 
 footer {
    background-color: var(--Very-Dark-Cyan);
-   color: white;
-   padding-top: 200px;
+   color: var(--Very-Pale-Cyan);
+   padding-top: 130px;
+}
+
+footer img {
+   display: inline-block;
+}
+
+footer .contact-info {
+   text-align: left;
+   display: flex;
+   flex-direction: column;
+}
+
+.contact-info p {
+   padding: 0;
+   margin: 0 0;
 }
 
 footer img:nth-of-type(1){
    filter: contrast(0) brightness(100);
+   width: 190.703px;
 }
+
+footer .contact-address img,
+footer .contact-num img,
+footer .contact-email img {
+   width: 20px;
+}
+
+.contact-address,
+.contact-num,
+.contact-email {
+   display: grid;
+   grid-template-columns: 45px 1fr;
+   justify-items: start;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.contact-address img{
+   align-self: start;
+   padding-top: 6px;
+}
+.contact-address p {
+   align-self: start;
+}
+
+.company-info ul {
+   flex-direction: column;
+   text-align: left;
+}
+
+.company-info li {
+   padding-top: 20px;
+}
+
+.company-info a {
+   text-decoration: none;
+   color: var(--Very-Pale-Cyan);
+   transition: .3s color;
+}
+
+.company-info a:hover,
+.company-info a:focus {
+   color: var(--Pink);
+}
+
+.company-info ul,
+.social-icons ul {
+   list-style-type: none;
+   display: flex;
+   padding-left: 0;
+}
+
+.social-icons ul{
+   justify-content: center;
+   display: inline-flex;
+}
+
+.social-icons li {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0px 7px;
+}
+.social-icons li > a {
+   position: relative;
+   display: block;
+   text-align: center;
+   color: var(--Very-Pale-Cyan);
+   border: 1px solid var(--Very-Pale-Cyan);
+   border-radius: 50%;
+   width: 35px;
+   height: 35px;
+}
+
+.social-icons a > i {
+   font-size: 1.067rem;
+   line-height: 34px;
+}
+
+.social-icons a > i.fa-twitter {
+   font-size: 0.937rem;
+   line-height: 35px;
+}
+.social-icons li.facebook:hover > a {
+   background-color: white;
+   color: #3b5999;
+}
+.social-icons li.twitter:hover > a {
+   background-color: white;
+   color: #46c1f6;
+}
+.social-icons li.instagram:hover > a {
+   background-color: white;
+   color: #e1306c;
+}
+
+.copyright p{
+   font-size: 0.723rem;
+}
+
+.attribution {
+   font-size: 11px; 
+   text-align: center; 
+   margin: 0 auto; 
+}
+.attribution a { 
+   color: hsl(228, 45%, 44%); 
+}
+
+.attribution a:hover,
+.attribution a:focus {
+   color: var(--Pink);
+}
+
+
+
+
+
+
+
+
+
 
 
 
