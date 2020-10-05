@@ -287,6 +287,25 @@ footer .contact-email img {
    text-decoration: none;
    color: var(--Very-Pale-Cyan);
    transition: .3s color;
+   position: relative;
+}
+
+.company-info a::after {
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 2px;
+   background-color: var(--Pink);
+   transform: scaleX(0);
+   transform-origin: right;
+   transition: transform 250ms ease-in;
+}
+
+.company-info a:hover::after {
+   transform: scaleX(1);
+   transform-origin: left;
 }
 
 .company-info a:hover,
@@ -368,12 +387,14 @@ footer .contact-email img {
    margin: 0 auto; 
 }
 .attribution a { 
-   color: hsl(228, 45%, 44%); 
+   color: var(--Pink); 
+   text-decoration: none;
 }
 
 .attribution a:hover,
 .attribution a:focus {
-   color: var(--Pink);
+   color: var(--Grayish-Blue);
+   text-decoration: overline;
 }
 
 
@@ -392,17 +413,21 @@ footer .contact-email img {
    }
 
    .btn {
-      padding: 13px 60px;
+      padding: 1rem 3.5rem;
    }
 
    /* header-900 */ 
+
+   header {
+      height: 100vh;
+   }
 
    nav img {
       width: 180.703px;
    }
 
    nav .btn {
-      padding: 5px 40px;
+      padding: 10px 50px;
    }
 
    .header-content {
@@ -410,8 +435,15 @@ footer .contact-email img {
       grid-template-columns: .8fr 1fr;
       justify-content: center;
       align-items: center;
-      margin-top: 30px;
+      margin-top: 10vh;
    }
+
+   header .header-img {
+      margin-left: 10px;
+      align-self: center;
+      justify-self: center;
+   }
+
    header h1,
    header p {
       text-align: left;
@@ -419,11 +451,25 @@ footer .contact-email img {
       margin-right: 0;
       align-self: end;
    }
+   
+   header h1 {
+      font-size: 1.793rem;
+      max-width: 365px;
+   }
    header p {
       max-width: 480px;
    }
 
    /* cards-900 */
+
+   .cards p {
+      font-size: 1rem;
+   }
+
+   .cards h2 {
+      font-size: 1.575rem;
+      margin-top: 0;
+   }
    
    .card-items:nth-child(1), 
    .card-items:nth-child(2),
@@ -458,7 +504,17 @@ footer .contact-email img {
 
    aside.card-items {
       text-align: center;
-      max-width: 520.5px;
+      max-width: 575.5px;
+   }
+
+   .cards aside > h2 {
+      font-size: 1.296rem;
+      max-width: unset;
+   }
+
+   aside .btn {
+      padding: 1rem 4.3rem;
+      font-size: 0.823rem;
    }
 
    /* footer-900 */
